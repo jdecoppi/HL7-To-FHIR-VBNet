@@ -22,16 +22,28 @@ Partial Class HL7ToFHIRConvertor
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        RichTextBox1 = New RichTextBox()
         SuspendLayout()
+        ' 
+        ' RichTextBox1
+        ' 
+        RichTextBox1.Location = New Point(12, 12)
+        RichTextBox1.Name = "RichTextBox1"
+        RichTextBox1.Size = New Size(450, 96)
+        RichTextBox1.TabIndex = 0
+        RichTextBox1.Text = ""
         ' 
         ' HL7ToFHIRConvertor
         ' 
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(RichTextBox1)
         Name = "HL7ToFHIRConvertor"
         Text = "HL7 To FHIR Convertor"
         ResumeLayout(False)
     End Sub
+
+    Friend WithEvents RichTextBox1 As RichTextBox
 
 End Class
